@@ -6,7 +6,7 @@
     kubernetescni_version: '0.7.5'
     docker_version: '18.06.3~ce~3-0~ubuntu'
   roles:
-    - ../../roles/kube-node-common
+    - ../roles/kube-node-common
 
 - name: Installing furyagent
   hosts: all
@@ -14,4 +14,4 @@
   vars:
     furyagent_uri: https://github.com/sighupio/furyagent/releases/latest/download/furyagent-linux-amd64
   roles:
-    - ../../roles/furyagent
+    - ../roles/furyagent
