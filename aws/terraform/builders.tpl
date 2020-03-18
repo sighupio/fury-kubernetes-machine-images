@@ -23,7 +23,7 @@
     "most_recent": true
   },
   "ssh_username": "${user}",
-  "ami_name": "KFD-Ubuntu-${kind}-${version}-{{timestamp}}",
+  "ami_name": "KFD-${version}-${kind}-${k8s_version}-{{timestamp}}",
   "ami_groups": ["all"],
   "ami_regions": ["eu-central-1", "eu-north-1", "eu-west-3", "eu-west-2", "eu-west-1"],
   "tags": {
