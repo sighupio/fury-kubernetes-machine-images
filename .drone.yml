@@ -1,0 +1,70 @@
+---
+kind: pipeline
+name: aws
+type: docker
+
+steps:
+  - name: terraform
+    image: hashicorp/terraform:0.12.20
+    environment: &aws_env
+      AWS_ACCESS_KEY_ID:
+        from_secret: aws_access_key_id
+      AWS_SECRET_ACCESS_KEY:
+        from_secret: aws_secret_access_key
+    volumes: &aws_shared_volumes
+      - name: shared
+        path: /shared
+    commands:
+      - cd aws/terraform
+      - terraform init
+      - terraform apply 
+        --auto-approve
+        --var="kfi-version=${DRONE_TAG}"
+        --var="kubernetes-minor-version=v1.16"
+      - terraform output amis > /shared/ami-0.json
+      - terraform apply 
+        --auto-approve
+        --var="kfi-version=${DRONE_TAG}"
+        --var="kubernetes-minor-version=v1.15"
+      - terraform output amis > /shared/ami-1.json
+      - terraform apply 
+        --auto-approve
+        --var="kfi-version=${DRONE_TAG}"
+        --var="kubernetes-minor-version=v1.14"
+      - terraform output amis > /shared/ami-2.json
+
+  - name: packer-0
+    image: quay.io/sighup/packer:2.8.5_10_1.4.4
+    environment: *aws_env
+    volumes: *aws_shared_volumes
+    commands:
+      - cd aws
+      - packer build /shared/ami-0.json
+    depends_on: &packer_dependency
+      - terraform
+
+  - name: packer-1
+    image: quay.io/sighup/packer:2.8.5_10_1.4.4
+    environment: *aws_env
+    volumes: *aws_shared_volumes
+    commands:
+      - cd aws
+      - packer build /shared/ami-1.json
+    depends_on: *packer_dependency
+
+  - name: packer-2
+    image: quay.io/sighup/packer:2.8.5_10_1.4.4
+    environment: *aws_env
+    volumes: *aws_shared_volumes
+    commands:
+      - cd aws
+      - packer build /shared/ami-2.json
+    depends_on: *packer_dependency
+
+volumes:
+  - name: shared
+    temp: {}
+
+trigger:
+  ref:
+    - refs/tags/*
