@@ -33,7 +33,8 @@ locals {
   user               = "ubuntu"
   kfi-version-parsed = split("-", var.kfi-version)[0]
   fury-versions      = yamldecode(file("${path.module}/${var.versions-file-path}"))
-  kube-version       = local.fury-versions["fury"][local.kfi-version-parsed]["kubernetes"][var.kubernetes-minor-version]
+  raw-kube-version   = local.fury-versions["fury"][local.kfi-version-parsed]["kubernetes"][var.kubernetes-minor-version]
+  kube-version       = trimprefix(raw-kube-version, "v")
   cri-tools-version  = "${join(".", slice(split(".", local.kube-version), 0, 2))}.0"
 }
 
