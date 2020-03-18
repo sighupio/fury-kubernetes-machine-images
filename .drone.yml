@@ -61,6 +61,22 @@ steps:
       - packer build /shared/ami-2.json
     depends_on: *packer_dependency
 
+  - name: clean-up
+    image: python:3.7
+    environment:
+      QUAY_TOKEN:
+        from_secret: quay_token
+      AWS_ACCESS_KEY_ID:
+        from_secret: aws_access_key_id
+      AWS_SECRET_ACCESS_KEY:
+        from_secret: aws_secret_access_key
+      AWS_DEFAULT_REGION: eu-west-1
+      AWS_REGION: eu-west-1
+    commands:
+      - cd aws/clean-up
+      - pip install -r requirements.txt
+      - python -u rc-cleaner.py --version ${DRONE_TAG} --confirm
+
 volumes:
   - name: shared
     temp: {}
