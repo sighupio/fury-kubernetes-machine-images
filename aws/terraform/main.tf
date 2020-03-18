@@ -1,10 +1,5 @@
 terraform {
-  backend "s3" {
-    bucket = "sighup-fury-dev"
-    key    = "fury-kubernetes-aws-feature-auto-join"
-    region = "eu-west-1"
-  }
-  required_version = "= 0.12.20"
+  required_version = "= 0.12.23"
 }
 
 provider "aws" {
@@ -38,33 +33,14 @@ locals {
   cri-tools-version  = "${join(".", slice(split(".", local.kube-version), 0, 2))}.0"
 }
 
-
-resource "aws_vpc" "main" {
-  cidr_block = "10.0.0.0/16"
+data "aws_vpc" "main" {
   tags = {
     Usage = "packer_build"
   }
 }
 
-resource "aws_internet_gateway" "gw" {
-  vpc_id = aws_vpc.main.id
-  tags = {
-    Usage = "packer_build"
-  }
-}
-
-resource "aws_route" "gw" {
-  route_table_id         = aws_vpc.main.main_route_table_id
-  destination_cidr_block = "0.0.0.0/0"
-  gateway_id             = aws_internet_gateway.gw.id
-}
-
-
-resource "aws_subnet" "main" {
-  vpc_id                  = aws_vpc.main.id
-  cidr_block              = "10.0.1.0/24"
-  map_public_ip_on_launch = true
-
+data "aws_subnet" "main" {
+  vpc_id = data.aws_vpc.main.id
   tags = {
     Usage = "packer_build"
   }
@@ -75,7 +51,7 @@ data "template_file" "builders" {
   count    = length(local.kinds)
   template = file("builders.tpl")
   vars = {
-    vpc_id      = aws_vpc.main.id
+    subnet_id   = data.aws_subnet.main.id
     user        = local.user
     kind        = local.kinds[count.index]
     version     = var.kfi-version

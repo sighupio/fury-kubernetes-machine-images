@@ -4,14 +4,7 @@
   "access_key": "{{user `aws_access_key`}}",
   "secret_key": "{{user `aws_secret_key`}}",
   "region": "eu-west-1",
-  "subnet_filter": {
-    "filters": {
-      "tag:Usage": "packer_build"
-    },
-    "most_free": true,
-    "random": false
-  },
-  "vpc_id": "${vpc_id}",
+  "subnet_id": "${subnet_id}",
   "instance_type": "t2.micro",
   "source_ami_filter": {
     "filters": {
