@@ -76,6 +76,10 @@ steps:
       - cd aws/clean-up
       - pip install -r requirements.txt
       - python -u rc-cleaner.py --version ${DRONE_TAG} --confirm
+    depends_on:
+      - packer-0
+      - packer-1
+      - packer-2
 
 volumes:
   - name: shared
