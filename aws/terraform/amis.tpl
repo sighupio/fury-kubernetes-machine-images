@@ -21,7 +21,7 @@
         "rm /home/${user}/.ssh/authorized_keys",
         "sudo rm -rf /etc/machine-id",
         "sudo touch /etc/machine-id",
-        "sudo /var/lib/dbus/machine-id"
+        "sudo rm -rf /var/lib/dbus/machine-id"
       ]
     }
 
