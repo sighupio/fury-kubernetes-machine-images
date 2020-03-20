@@ -18,7 +18,9 @@
     ${provisioners}, {
       "type": "shell",
       "inline": [
-        "rm /home/${user}/.ssh/authorized_keys"
+        "rm /home/${user}/.ssh/authorized_keys",
+        "if [ -e /etc/machine-id ]; then rm -rf /etc/machine-id && touch /etc/machine-id; fi",
+        "if [[ -e /var/lib/dbus/machine-id && ! -h /var/lib/dbus/machine-id ]]; then rm -f /var/lib/dbus/machine-id; fi"
       ]
     }
 
