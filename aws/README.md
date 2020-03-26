@@ -151,3 +151,68 @@ the `machine-id` value to have it recreated on first boot of the instance to avo
 | KFD-v1.0.0-Master-1.16.2-1584610069  | ami-0de49b8aace772cf6 | eu-west-3    | Master  |
 | KFD-v1.0.0-Bastion-1.16.2-1584610069 | ami-04d87d017c01b823b | eu-west-3    | Bastion |
 | KFD-v1.0.0-Node-1.16.2-1584610069    | ami-0a3e89615e8a0e1dd | eu-west-3    | Node    |
+
+## Fury v0.0.0
+
+Fury versions `0` was created to test some corner cases features.
+In this case, we had the requirement to build 1.14.8 instead of 1.14.10. Has the base of [Fury 1.0.1](#fury-v101)
+
+### Kubernetes 1.14
+
+| Name                                 | AMI ID                | Region       | Kind    |
+|--------------------------------------|-----------------------|--------------|---------|
+| KFD-v0.0.0-Master-1.14.8-1585233269  | ami-05072e177285cb0a5 | eu-central-1 | Master  |
+| KFD-v0.0.0-Bastion-1.14.8-1585233269 | ami-07944ac675e5df2c7 | eu-central-1 | Bastion |
+| KFD-v0.0.0-Node-1.14.8-1585233270    | ami-0ee4e86623dae4ce3 | eu-central-1 | Node    |
+| KFD-v0.0.0-Master-1.14.8-1585233269  | ami-0e27d352eb88e3e81 | eu-north-1   | Master  |
+| KFD-v0.0.0-Bastion-1.14.8-1585233269 | ami-00c57f601ba252c4d | eu-north-1   | Bastion |
+| KFD-v0.0.0-Node-1.14.8-1585233270    | ami-0c829e4f08c286a52 | eu-north-1   | Node    |
+| KFD-v0.0.0-Master-1.14.8-1585233269  | ami-00a15e72ef860e7b2 | eu-west-1    | Master  |
+| KFD-v0.0.0-Bastion-1.14.8-1585233269 | ami-0c37286383146e8d0 | eu-west-1    | Bastion |
+| KFD-v0.0.0-Node-1.14.8-1585233270    | ami-0d3e786fb2161fe44 | eu-west-1    | Node    |
+| KFD-v0.0.0-Master-1.14.8-1585233269  | ami-00779c7125ec53fa4 | eu-west-2    | Master  |
+| KFD-v0.0.0-Bastion-1.14.8-1585233269 | ami-0cf056b1114fe2c7a | eu-west-2    | Bastion |
+| KFD-v0.0.0-Node-1.14.8-1585233270    | ami-0e015e15e36668844 | eu-west-2    | Node    |
+| KFD-v0.0.0-Master-1.14.8-1585233269  | ami-0541e522e6f7d9281 | eu-west-3    | Master  |
+| KFD-v0.0.0-Bastion-1.14.8-1585233269 | ami-06d11428458558c7f | eu-west-3    | Bastion |
+| KFD-v0.0.0-Node-1.14.8-1585233270    | ami-081d132967037dd48 | eu-west-3    | Node    |
+
+### Kubernetes 1.15
+
+| Name                                 | AMI ID                | Region       | Kind    |
+|--------------------------------------|-----------------------|--------------|---------|
+| KFD-v0.0.0-Master-1.15.5-1585233268  | ami-0a9efbf92a02f1e89 | eu-central-1 | Master  |
+| KFD-v0.0.0-Bastion-1.15.5-1585233268 | ami-0aad83677e586bee1 | eu-central-1 | Bastion |
+| KFD-v0.0.0-Node-1.15.5-1585233268    | ami-0eb4ee53a32adef9b | eu-central-1 | Node    |
+| KFD-v0.0.0-Master-1.15.5-1585233268  | ami-02a639e73db92a471 | eu-north-1   | Master  |
+| KFD-v0.0.0-Bastion-1.15.5-1585233268 | ami-0e56a1271285a5b50 | eu-north-1   | Bastion |
+| KFD-v0.0.0-Node-1.15.5-1585233268    | ami-061c9f06d1da96cdc | eu-north-1   | Node    |
+| KFD-v0.0.0-Master-1.15.5-1585233268  | ami-0f71abc6021fe6607 | eu-west-1    | Master  |
+| KFD-v0.0.0-Bastion-1.15.5-1585233268 | ami-064a74442a048fb94 | eu-west-1    | Bastion |
+| KFD-v0.0.0-Node-1.15.5-1585233268    | ami-05618e5f7e0bf3dc5 | eu-west-1    | Node    |
+| KFD-v0.0.0-Master-1.15.5-1585233268  | ami-084ecfa20ba7ea4f9 | eu-west-2    | Master  |
+| KFD-v0.0.0-Bastion-1.15.5-1585233268 | ami-03b1a2667fbd0281b | eu-west-2    | Bastion |
+| KFD-v0.0.0-Node-1.15.5-1585233268    | ami-03aea63792e1fca93 | eu-west-2    | Node    |
+| KFD-v0.0.0-Master-1.15.5-1585233268  | ami-0cd3c2ac49f21341c | eu-west-3    | Master  |
+| KFD-v0.0.0-Bastion-1.15.5-1585233268 | ami-0a1f6f667de512399 | eu-west-3    | Bastion |
+| KFD-v0.0.0-Node-1.15.5-1585233268    | ami-042da0a227158970c | eu-west-3    | Node    |
+
+### Kubernetes 1.16
+
+| Name                                 | AMI ID                | Region       | Kind    |
+|--------------------------------------|-----------------------|--------------|---------|
+| KFD-v0.0.0-Master-1.16.2-1585233267  | ami-0a07e0402f7f9ed6c | eu-central-1 | Master  |
+| KFD-v0.0.0-Bastion-1.16.2-1585233267 | ami-07f071de3de0ce517 | eu-central-1 | Bastion |
+| KFD-v0.0.0-Node-1.16.2-1585233267    | ami-0f5dce5c6053668f0 | eu-central-1 | Node    |
+| KFD-v0.0.0-Master-1.16.2-1585233267  | ami-0b1be5dbdf35cb78d | eu-north-1   | Master  |
+| KFD-v0.0.0-Bastion-1.16.2-1585233267 | ami-0f36a4fdc5286783b | eu-north-1   | Bastion |
+| KFD-v0.0.0-Node-1.16.2-1585233267    | ami-06e39ad65e46ed2a2 | eu-north-1   | Node    |
+| KFD-v0.0.0-Master-1.16.2-1585233267  | ami-0d0835d38d95eedf0 | eu-west-1    | Master  |
+| KFD-v0.0.0-Bastion-1.16.2-1585233267 | ami-00d806cbed5b94eb9 | eu-west-1    | Bastion |
+| KFD-v0.0.0-Node-1.16.2-1585233267    | ami-0ae4f80b6bc63c54e | eu-west-1    | Node    |
+| KFD-v0.0.0-Master-1.16.2-1585233267  | ami-0dba5dcbd5374dd2c | eu-west-2    | Master  |
+| KFD-v0.0.0-Bastion-1.16.2-1585233267 | ami-0fc430743a5600b7c | eu-west-2    | Bastion |
+| KFD-v0.0.0-Node-1.16.2-1585233267    | ami-0c903fb8500c52c32 | eu-west-2    | Node    |
+| KFD-v0.0.0-Master-1.16.2-1585233267  | ami-040f3f52a92669daf | eu-west-3    | Master  |
+| KFD-v0.0.0-Bastion-1.16.2-1585233267 | ami-05eb9d88324182014 | eu-west-3    | Bastion |
+| KFD-v0.0.0-Node-1.16.2-1585233267    | ami-000192ee789cf2609 | eu-west-3    | Node    |
