@@ -24,6 +24,70 @@ Contains all the necessary configuration and packages to make it work with a spe
 
 Contains only furyagent installed.
 
+## Fury v1.0.2
+
+This feature includes 1.15 and 1.16 patches updates
+
+### Kubernetes 1.14
+
+| Name                                  | AMI ID                | Region       | Kind    |
+|---------------------------------------|-----------------------|--------------|---------|
+| KFD-v1.0.2-Master-1.14.10-1587460085  | ami-02425846b1034aed9 | eu-central-1 | Master  |
+| KFD-v1.0.2-Bastion-1.14.10-1587460085 | ami-0b558bab563b79d2e | eu-central-1 | Bastion |
+| KFD-v1.0.2-Node-1.14.10-1587460086    | ami-08a6411b46af7c977 | eu-central-1 | Node    |
+| KFD-v1.0.2-Master-1.14.10-1587460085  | ami-0aad9fb585e26eba9 | eu-north-1   | Master  |
+| KFD-v1.0.2-Bastion-1.14.10-1587460085 | ami-00ce76d6631d07a94 | eu-north-1   | Bastion |
+| KFD-v1.0.2-Node-1.14.10-1587460086    | ami-0ab515f75deda0705 | eu-north-1   | Node    |
+| KFD-v1.0.2-Master-1.14.10-1587460085  | ami-020d9f05745c34f98 | eu-west-1    | Master  |
+| KFD-v1.0.2-Bastion-1.14.10-1587460085 | ami-0f1e75dbcde96c6c1 | eu-west-1    | Bastion |
+| KFD-v1.0.2-Node-1.14.10-1587460086    | ami-0b48558563fc09a21 | eu-west-1    | Node    |
+| KFD-v1.0.2-Master-1.14.10-1587460085  | ami-0641563e17e9113be | eu-west-2    | Master  |
+| KFD-v1.0.2-Bastion-1.14.10-1587460085 | ami-0991fb0232f1f406d | eu-west-2    | Bastion |
+| KFD-v1.0.2-Node-1.14.10-1587460086    | ami-040be21a981290fb2 | eu-west-2    | Node    |
+| KFD-v1.0.2-Master-1.14.10-1587460085  | ami-067b699e2516b8521 | eu-west-3    | Master  |
+| KFD-v1.0.2-Bastion-1.14.10-1587460085 | ami-0dd09b3f3a2478b6b | eu-west-3    | Bastion |
+| KFD-v1.0.2-Node-1.14.10-1587460086    | ami-00d3cf18ee29f1656 | eu-west-3    | Node    |
+
+### Kubernetes 1.15
+
+| Name                                  | AMI ID                | Region       | Kind    |
+|---------------------------------------|-----------------------|--------------|---------|
+| KFD-v1.0.2-Master-1.15.11-1587460084  | ami-0f4488a0cef835b68 | eu-central-1 | Master  |
+| KFD-v1.0.2-Bastion-1.15.11-1587460084 | ami-0de0b0fc276f6715f | eu-central-1 | Bastion |
+| KFD-v1.0.2-Node-1.15.11-1587460085    | ami-0048ffabdef99672c | eu-central-1 | Node    |
+| KFD-v1.0.2-Master-1.15.11-1587460084  | ami-04cccf970a9a0671c | eu-north-1   | Master  |
+| KFD-v1.0.2-Bastion-1.15.11-1587460084 | ami-0ad3863f49b49b52b | eu-north-1   | Bastion |
+| KFD-v1.0.2-Node-1.15.11-1587460085    | ami-09ef665080a6899ea | eu-north-1   | Node    |
+| KFD-v1.0.2-Master-1.15.11-1587460084  | ami-0ee58aa1dd8ea295f | eu-west-1    | Master  |
+| KFD-v1.0.2-Bastion-1.15.11-1587460084 | ami-0e7713410b1f9197a | eu-west-1    | Bastion |
+| KFD-v1.0.2-Node-1.15.11-1587460085    | ami-0e276150596434ef1 | eu-west-1    | Node    |
+| KFD-v1.0.2-Master-1.15.11-1587460084  | ami-06ffc26a58b1b4437 | eu-west-2    | Master  |
+| KFD-v1.0.2-Bastion-1.15.11-1587460084 | ami-0d154bc1ec0d92749 | eu-west-2    | Bastion |
+| KFD-v1.0.2-Node-1.15.11-1587460085    | ami-041d4fbefe9355ae0 | eu-west-2    | Node    |
+| KFD-v1.0.2-Master-1.15.11-1587460084  | ami-0cc5a25cda0a3ba1b | eu-west-3    | Master  |
+| KFD-v1.0.2-Bastion-1.15.11-1587460084 | ami-0820e853bbf2c992a | eu-west-3    | Bastion |
+| KFD-v1.0.2-Node-1.15.11-1587460085    | ami-0385ed1fb90d70990 | eu-west-3    | Node    |
+
+### Kubernetes 1.16
+
+| Name                                 | AMI ID                | Region       | Kind    |
+|--------------------------------------|-----------------------|--------------|---------|
+| KFD-v1.0.2-Master-1.16.9-1587460083  | ami-0d11e3ce415da3e88 | eu-central-1 | Master  |
+| KFD-v1.0.2-Bastion-1.16.9-1587460083 | ami-016020d92b629ecf4 | eu-central-1 | Bastion |
+| KFD-v1.0.2-Node-1.16.9-1587460083    | ami-0f33fe60d4dc8beb4 | eu-central-1 | Node    |
+| KFD-v1.0.2-Master-1.16.9-1587460083  | ami-03b337e6bbb3dbf79 | eu-north-1   | Master  |
+| KFD-v1.0.2-Bastion-1.16.9-1587460083 | ami-0666a02222082bd1c | eu-north-1   | Bastion |
+| KFD-v1.0.2-Node-1.16.9-1587460083    | ami-05289f663124166e6 | eu-north-1   | Node    |
+| KFD-v1.0.2-Master-1.16.9-1587460083  | ami-0ab3c89f86d089a22 | eu-west-1    | Master  |
+| KFD-v1.0.2-Bastion-1.16.9-1587460083 | ami-0b0face44dc5842bd | eu-west-1    | Bastion |
+| KFD-v1.0.2-Node-1.16.9-1587460083    | ami-047971e65d731c404 | eu-west-1    | Node    |
+| KFD-v1.0.2-Master-1.16.9-1587460083  | ami-0fc30a76a60a101b0 | eu-west-2    | Master  |
+| KFD-v1.0.2-Bastion-1.16.9-1587460083 | ami-08de76f123d18feb9 | eu-west-2    | Bastion |
+| KFD-v1.0.2-Node-1.16.9-1587460083    | ami-0f00cd60a210fa458 | eu-west-2    | Node    |
+| KFD-v1.0.2-Master-1.16.9-1587460083  | ami-094bed00d8a475cfb | eu-west-3    | Master  |
+| KFD-v1.0.2-Bastion-1.16.9-1587460083 | ami-0e63aa6083c34eaad | eu-west-3    | Bastion |
+| KFD-v1.0.2-Node-1.16.9-1587460083    | ami-03568272d7f3b926f | eu-west-3    | Node    |
+
 ## Fury v1.0.1
 
 This feature includes a hotfix related to the `machine-id` issue. Includes a reset of
