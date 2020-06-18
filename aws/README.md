@@ -71,7 +71,7 @@ This feature includes 1.15 and 1.16 patches updates
 ### Kubernetes 1.16
 
 | Name                                  | AMI ID                | Region       | Kind    |
-|-------------------------------- ------|-----------------------|--------------|---------|
+|---------------------------------------|-----------------------|--------------|---------|
 | KFD-v1.0.3-Master-1.16.10-1591788552  | ami-096e9919d9edf3121 | eu-central-1 | Master  |
 | KFD-v1.0.3-Bastion-1.16.10-1591788552 | ami-098087d0c62641763 | eu-central-1 | Bastion |
 | KFD-v1.0.3-Node-1.16.10-1591788553    | ami-0a4924f9f9d5775e1 | eu-central-1 | Node    |
