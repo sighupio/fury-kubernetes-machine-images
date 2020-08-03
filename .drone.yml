@@ -17,20 +17,20 @@ steps:
     commands:
       - cd aws/terraform
       - terraform init
-      - terraform apply 
+      - terraform apply
+        --auto-approve
+        --var="kfi-version=${DRONE_TAG}"
+        --var="kubernetes-minor-version=v1.18"
+      - terraform output amis > /shared/ami-0.json
+      - terraform apply
+        --auto-approve
+        --var="kfi-version=${DRONE_TAG}"
+        --var="kubernetes-minor-version=v1.17"
+      - terraform output amis > /shared/ami-1.json
+      - terraform apply
         --auto-approve
         --var="kfi-version=${DRONE_TAG}"
         --var="kubernetes-minor-version=v1.16"
-      - terraform output amis > /shared/ami-0.json
-      - terraform apply 
-        --auto-approve
-        --var="kfi-version=${DRONE_TAG}"
-        --var="kubernetes-minor-version=v1.15"
-      - terraform output amis > /shared/ami-1.json
-      - terraform apply 
-        --auto-approve
-        --var="kfi-version=${DRONE_TAG}"
-        --var="kubernetes-minor-version=v1.14"
       - terraform output amis > /shared/ami-2.json
 
   - name: packer-0
