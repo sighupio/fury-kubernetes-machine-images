@@ -33,21 +33,21 @@ addition of 1.17 and 1.18.
 
 | Name                                  | AMI ID                | Region       | Kind    |
 |---------------------------------------|-----------------------|--------------|---------|
-| KFD-v1.0.4-Master-1.16.13-1591788551  | ami-0a8e8c462248d7a18 | eu-central-1 | Master  |
-| KFD-v1.0.4-Bastion-1.16.13-1591788551 | ami-0e769a3e5598836e6 | eu-central-1 | Bastion |
-| KFD-v1.0.4-Node-1.16.13-1591788552    | ami-03244da4be320248f | eu-central-1 | Node    |
-| KFD-v1.0.4-Master-1.16.13-1591788551  | ami-00c0bfb5a2f7774ca | eu-north-1   | Master  |
-| KFD-v1.0.4-Bastion-1.16.13-1591788551 | ami-0862e37b715a9c336 | eu-north-1   | Bastion |
-| KFD-v1.0.4-Node-1.16.13-1591788552    | ami-0583d900148e8f3b3 | eu-north-1   | Node    |
-| KFD-v1.0.4-Master-1.16.13-1591788551  | ami-043761609068ac5c9 | eu-west-1    | Master  |
-| KFD-v1.0.4-Bastion-1.16.13-1591788551 | ami-06514efc5368a2b94 | eu-west-1    | Bastion |
-| KFD-v1.0.4-Node-1.16.13-1591788552    | ami-0e8815faed05fdd10 | eu-west-1    | Node    |
-| KFD-v1.0.4-Master-1.16.13-1591788551  | ami-014070aa4db116ecb | eu-west-2    | Master  |
-| KFD-v1.0.4-Bastion-1.16.13-1591788551 | ami-09aac5a2a194845a7 | eu-west-2    | Bastion |
-| KFD-v1.0.4-Node-1.16.13-1591788552    | ami-0a34db7d1ebc55dc0 | eu-west-2    | Node    |
-| KFD-v1.0.4-Master-1.16.13-1591788551  | ami-01b7708862742dfec | eu-west-3    | Master  |
-| KFD-v1.0.4-Bastion-1.16.13-1591788551 | ami-0eec6157654674904 | eu-west-3    | Bastion |
-| KFD-v1.0.4-Node-1.16.13-1591788552    | ami-0c45227c0a8509bf1 | eu-west-3    | Node    |
+| KFD-v1.0.4-Master-1.16.13-1596477044  | ami-0a8e8c462248d7a18 | eu-central-1 | Master  |
+| KFD-v1.0.4-Bastion-1.16.13-1596477044 | ami-0e769a3e5598836e6 | eu-central-1 | Bastion |
+| KFD-v1.0.4-Node-1.16.13-1596477045    | ami-03244da4be320248f | eu-central-1 | Node    |
+| KFD-v1.0.4-Master-1.16.13-1596477044  | ami-00c0bfb5a2f7774ca | eu-north-1   | Master  |
+| KFD-v1.0.4-Bastion-1.16.13-1596477044 | ami-0862e37b715a9c336 | eu-north-1   | Bastion |
+| KFD-v1.0.4-Node-1.16.13-1596477045    | ami-0583d900148e8f3b3 | eu-north-1   | Node    |
+| KFD-v1.0.4-Master-1.16.13-1596477044  | ami-043761609068ac5c9 | eu-west-1    | Master  |
+| KFD-v1.0.4-Bastion-1.16.13-1596477044 | ami-06514efc5368a2b94 | eu-west-1    | Bastion |
+| KFD-v1.0.4-Node-1.16.13-1596477045    | ami-0e8815faed05fdd10 | eu-west-1    | Node    |
+| KFD-v1.0.4-Master-1.16.13-1596477044  | ami-014070aa4db116ecb | eu-west-2    | Master  |
+| KFD-v1.0.4-Bastion-1.16.13-1596477044 | ami-09aac5a2a194845a7 | eu-west-2    | Bastion |
+| KFD-v1.0.4-Node-1.16.13-1596477045    | ami-0a34db7d1ebc55dc0 | eu-west-2    | Node    |
+| KFD-v1.0.4-Master-1.16.13-1596477044  | ami-01b7708862742dfec | eu-west-3    | Master  |
+| KFD-v1.0.4-Bastion-1.16.13-1596477044 | ami-0eec6157654674904 | eu-west-3    | Bastion |
+| KFD-v1.0.4-Node-1.16.13-1596477045    | ami-0c45227c0a8509bf1 | eu-west-3    | Node    |
 
 ### Kubernetes 1.17
 
