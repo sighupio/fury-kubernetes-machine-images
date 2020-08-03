@@ -11,26 +11,26 @@ kubeadm_version: '1.15.4'
 critools_version: '1.15.0'
 # critools variables
 critools:
-  v1.14.0:
-    crictl:
-      sha256: 483c90a9fe679590df4332ba807991c49232e8cd326c307c575ecef7fe22327b
-      base_url: https://github.com/kubernetes-sigs/cri-tools/releases/download
-    critest:
-      sha256: 4c640219e297c877b56e7b13dcd0f10ab2a76092dd7bdb888d83c64372f0a3f9
-      base_url: https://github.com/kubernetes-sigs/cri-tools/releases/download
-  v1.15.0:
-    crictl:
-      sha256: c3b71be1f363e16078b51334967348aab4f72f46ef64a61fe7754e029779d45a
-      base_url: https://github.com/kubernetes-sigs/cri-tools/releases/download
-    critest:
-      sha256: 099ac7f169b2c1b080448788b21969118659a24cd345e16836a4c959b95493e5
-      base_url: https://github.com/kubernetes-sigs/cri-tools/releases/download
   v1.16.0:
     crictl:
       sha256: a3eefa10a483c643ad85aee3d7832a720976ef7e80dde46b212eaaacd7d09512
       base_url: https://github.com/kubernetes-sigs/cri-tools/releases/download
     critest:
       sha256: 909ba3e1404c86b82a957d4c69ae9a40e418a09e104fc017e708b877f78eaa73
+      base_url: https://github.com/kubernetes-sigs/cri-tools/releases/download
+  v1.17.0:
+    crictl:
+      sha256: 7b72073797f638f099ed19550d52e9b9067672523fc51b746e65d7aa0bafa414
+      base_url: https://github.com/kubernetes-sigs/cri-tools/releases/download
+    critest:
+      sha256: 17088d99f70f3e03d8215de3594cbec367749b0a187f147cc3b2b975e497b433
+      base_url: https://github.com/kubernetes-sigs/cri-tools/releases/download
+  v1.18.0:
+    crictl:
+      sha256: 876dd2b3d0d1c2590371f940fb1bf1fbd5f15aebfbe456703ee465d959700f4a
+      base_url: https://github.com/kubernetes-sigs/cri-tools/releases/download
+    critest:
+      sha256: 23968677bdf5d4055e5118c85449b19b046ee1d8822cae5859b7a4a80c2f1955
       base_url: https://github.com/kubernetes-sigs/cri-tools/releases/download
 kubernetescni_version: '0.7.5'
 kubernetes_cloud_provider: 'aws'
