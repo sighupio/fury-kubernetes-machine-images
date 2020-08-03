@@ -3,7 +3,7 @@
   become: true
   vars:
     kubernetes_repo_distribution: 'xenial'
-    kubernetescni_version: '0.7.5'
+    kubernetescni_version: '0.8.6'
     docker_version: '18.06.3~ce~3-0~ubuntu'
   roles:
     - ../roles/kube-node-common
