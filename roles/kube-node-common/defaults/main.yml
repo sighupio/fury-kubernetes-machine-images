@@ -9,7 +9,7 @@ kubelet_version: '1.15.4'
 kubectl_version: '1.15.4'
 kubeadm_version: '1.15.4'
 critools_version: '1.15.0'
-# critools variables
+# critools variables
 critools:
   v1.16.0:
     crictl:

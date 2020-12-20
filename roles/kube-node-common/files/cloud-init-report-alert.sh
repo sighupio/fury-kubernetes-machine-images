@@ -2,7 +2,7 @@
 
 # Notify function
 # Sends notification to alertmanager
-# $1: The alertmanager alerts url
+# $1: The alertmanager alerts url
 # $2: Severity: warning,critical,error
 # $3: Summary: Description about the error
 notify()
