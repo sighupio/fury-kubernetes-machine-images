@@ -88,3 +88,6 @@ volumes:
 trigger:
   ref:
     - refs/tags/*
+  branch:
+    exclude:
+    - vsphere
