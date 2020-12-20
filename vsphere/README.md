@@ -10,7 +10,7 @@ The files included in this folder are used to create the Kubernetes Fury Distrib
 export VSPHERE_USER=<user>
 export VSPHERE_PASSWORD=<password>
 export VSPHERE_SERVER=<vCenter URL/IP>
-cd vsphere/terraform
+cd terraform
 make templates
 ```
 
